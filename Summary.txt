@@ -1,0 +1,17 @@
+Overview: The purpose of this analysis was to figure out whether a charity was to be successful or not by using a binary classifier that we created. 
+
+Results: With 3 attempts I was not able to return a predictive accuracy higher than 75%. First attempt I used 2 hidden notes with relu activations and 10 epochs. Second attempt, added a 3rd hidden note with same relu activation. Third attempt, kept 3 hidden nodes but used selu activation. All yielding with approx 73% accuracy. 
+
+What variable(s) are considered the target(s) for your model? 
+
+    Used the 'IS_SUCCESSFUL' column as the target for the models.
+
+What variable(s) are considered to be the features for your model? 
+
+    Used the 'CLASSIFICATION', 'APPLICATION_TYPE' columns for features on the models.
+
+What variable(s) are neither targets nor features, and should be removed from the input data? 
+
+    'EIN', 'NAME' were removed from the input data because they were of no value to the data.
+
+Summary: To achieve the desired 75% predictive accuracy we could add more nodes, layers, trim the data more, or run more epochs. 
